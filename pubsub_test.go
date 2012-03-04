@@ -80,14 +80,14 @@ func (s *S) TestBrokerPublish(c *C) {
 
 	time.Sleep(time.Millisecond)
 	c.Assert(len(messages1), Equals, 3)
-	c.Check(messages1[0].channel, Equals, "chan1")
-	c.Check(messages1[0].data, Equals, "mymsg1")
-	c.Check(messages1[1].channel, Equals, "chan2")
-	c.Check(messages1[1].data, Equals, "mymsg2")
-	c.Check(messages1[2].channel, Equals, "chan1")
-	c.Check(messages1[2].data, Equals, "mymsg3")
+	c.Check(messages1[0].Channel, Equals, "chan1")
+	c.Check(messages1[0].Data, Equals, "mymsg1")
+	c.Check(messages1[1].Channel, Equals, "chan2")
+	c.Check(messages1[1].Data, Equals, "mymsg2")
+	c.Check(messages1[2].Channel, Equals, "chan1")
+	c.Check(messages1[2].Data, Equals, "mymsg3")
 	c.Assert(len(messages2), Equals, 1)
-	c.Check(messages2[0].channel, Equals, "chan1")
-	c.Check(messages2[0].data, Equals, "mymsg1")
+	c.Check(messages2[0].Channel, Equals, "chan1")
+	c.Check(messages2[0].Data, Equals, "mymsg1")
 
 }

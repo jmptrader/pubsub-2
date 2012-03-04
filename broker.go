@@ -92,7 +92,7 @@ func (b *Broker) backend() {
 			}
 		case data.message != nil:
 			msg := data.message
-			subset, exists := b.chansubs[msg.channel]
+			subset, exists := b.chansubs[msg.Channel]
 			if exists {
 				for sub, _ := range subset {
 					sub.msgHdlr(msg)
