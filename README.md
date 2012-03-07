@@ -9,8 +9,8 @@ pubsub is a package for Go that implements publish-subscribe messaging pattern.
 
 To run the tests:
 
-	cd $GOROOT/src/pkg/pubsub
-	go test -v
+    cd $GOROOT/src/pkg/pubsub
+    go test -v
 
 ## HACKING
 
