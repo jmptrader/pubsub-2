@@ -5,7 +5,7 @@ pubsub is a package for Go that implements publish-subscribe messaging pattern.
 
 ## Installation
 
-    go get github.com/fzzbt/radix
+    go get github.com/fzzbt/pubsub
 
 To run the tests:
 
