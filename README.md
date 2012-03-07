@@ -5,13 +5,12 @@ pubsub is a package for Go that implements publish-subscribe messaging pattern.
 
 ## Installation
 
-    cd /path/to/pubsub   
-    make install
+    go get github.com/fzzbt/radix
 
 To run the tests:
 
-	cd $GOROOT/src/pkg/pubsub &&
-	go test -v && make clean && cd -
+	cd $GOROOT/src/pkg/pubsub
+	go test -v
 
 ## HACKING
 
