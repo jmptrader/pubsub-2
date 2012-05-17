@@ -30,7 +30,8 @@ func (s *Subscription) Subscribe(channels ...string) {
 }
 
 // Unsubscribe queues a unsubscribe from the given channels.
-// If no channels are given, the Subscription will be unsubscribed from all currently subscribed channels.
+// If no channels are given, the Subscription will be unsubscribed from all currently subscribed
+// channels.
 func (s *Subscription) Unsubscribe(channels ...string) {
 	s.broker.dataChan <- &envData{false, &envSubscription{false, s, channels}, nil}
 }
